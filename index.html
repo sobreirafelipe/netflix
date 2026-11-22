@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Devclub - Netflix</title>
+</head>
+
+<body>
+
+    <!-- TOPO -->
+    <ul class="topo-menu">
+        <li>
+            <img src="Img/Logo.webp" class="topo">
+        </li>
+
+        <li>
+            <img src="Img/Profile.ico" class="topo">
+        </li>
+    </ul>
+
+    <!-- CAPA PRINCIPAL -->
+    <div class="capa">
+
+        <h1 class="titulo">Stranger Things</h1>
+
+        <p class="descricao">
+            Stranger Things é uma série de ficção científica criada pelos irmãos Duffer para a Netflix.
+            Situada na cidade fictícia de Hawkins, Indiana, a trama começa no ano de 1983 com o desaparecimento
+            do garoto Will.
+        </p>
+
+        <a class="link-assistir">Assistir</a>
+        <a class="link-info">Mais Informações</a>
+
+    </div>
+
+    <!-- VIDEO -->
+  <video src="Video/Stranger Things.mp4" autoplay muted loop></video>
+
+  
+    
+
+   
+<h2 class="subtitulo">Principais Séries e filmes</h2>
+
+<div class="carrossel-container">
+
+    <button class="anterior" onclick="mudarImagem(-1)">❮</button>
+
+    <div class="carrossel" id="carrossel">
+
+          <!-- SEGUNDA SEÇÃO -->
+        <div class="secao">
+            <img src="Img/breaking.webp" class="img-carrossel">
+            <img src="Img/chosen.webp" class="img-carrossel">
+            <img src="Img/rockie.webp" class="img-carrossel">
+            <img src="Img/suits.webp" class="img-carrossel">
+        </div>
+
+
+        <!-- PRIMEIRA SEÇÃO -->
+        <div class="secao">
+            <img src="Img/manifest.jpg" class="img-carrossel">
+            <img src="Img/o mentalista.webp" class="img-carrossel">
+            <img src="Img/Peaky blinders.jpg" class="img-carrossel">
+            <img src="Img/Velozes e furiosos.jpg" class="img-carrossel">
+        </div>
+
+      
+    </div>
+
+    <button class="proximo" onclick="mudarImagem(1)">❯</button>
+
+</div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

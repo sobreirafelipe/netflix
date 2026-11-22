@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+ul {
+    height: 40px;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+
+}
+
+
+.topo {
+    height: 20px;
+    cursor: pointer;
+}
+
+
+
+video {
+    width: 100%;
+    min-height: 80vh;
+}
+
+.capa {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 35%;
+}
+
+.titulo {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.descricao {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 110px;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position:absolute;
+    margin-top: -90px;
+}
+
+.link-info {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position:absolute;
+    margin-top: -90px;
+    margin-left: 95px;
+}
+
+.img-carrossel{
+     width: 243px;
+    height: 137px;
+    
+}
+
+
+.secao-carrossel {
+     width: 100%;
+    margin-top: 10px;
+}
+
+.carrossel-container {
+    position:relative;
+    width:94%;
+    padding: 0 40px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.carrossel {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.secao {
+    min-width: 100%;
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.img-carrossel {
+    width: calc((100% - 36px) / 4);
+    height: 165px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.img-carrossel:hover {
+    transform: scale(1.05);
+}
+
+.anterior,
+.proximo {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.anterior {
+    left: 0;
+}
+
+.proximo {
+    right: 0;
+}
+.subtitulo{
+    color:white;
+    margin-left: 3%;   
+}
