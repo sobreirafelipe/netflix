@@ -31,9 +31,7 @@ topo.addEventListener("click", () => {
     som.play();
 });
 
-const video = document.querySelector('video[src="Video/Stranger Things.mp4"]');
-
-const botao = document.querySelector("video[src='Video/Stranger Things.mp4']");
+const video = document.querySelector("video");
 
 botao.addEventListener("click", () => {
     video.muted = false;
