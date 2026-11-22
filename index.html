@@ -16,11 +16,11 @@
     <!-- TOPO -->
     <ul class="topo-menu">
         <li>
-            <img src="Img/Logo.webp" class="topo">
+            <img src="Img/Logo.webp" class="topo" alt="Logo Netflix">
         </li>
 
         <li>
-            <img src="Img/Profile.ico" class="topo">
+            <img src="Img/Profile.ico" class="topo" alt="Perfil">
         </li>
     </ul>
 
@@ -41,47 +41,49 @@
     </div>
 
     <!-- VIDEO -->
-  <video src="vídeo/Stranger Things.mp4" autoplay muted loop></video>
+    <video
+        src="video/Stranger Things.mp4"
+        autoplay
+        muted
+        loop
+        playsinline>
+    </video>
 
-  
-    
+    <!-- TÍTULO DO CARROSSEL -->
+    <h2 class="subtitulo">Principais Séries e filmes</h2>
 
-   
-<h2 class="subtitulo">Principais Séries e filmes</h2>
+    <!-- CARROSSEL -->
+    <div class="carrossel-container">
 
-<div class="carrossel-container">
+        <button class="anterior" onclick="mudarImagem(-1)">❮</button>
 
-    <button class="anterior" onclick="mudarImagem(-1)">❮</button>
+        <div class="carrossel" id="carrossel">
 
-    <div class="carrossel" id="carrossel">
+            <!-- PRIMEIRA SEÇÃO -->
+            <div class="secao">
+                <img src="Img/manifest.jpg" class="img-carrossel" alt="Manifest">
+                <img src="Img/o mentalista.webp" class="img-carrossel" alt="O Mentalista">
+                <img src="Img/Peaky blinders.jpg" class="img-carrossel" alt="Peaky Blinders">
+                <img src="Img/Velozes e furiosos.jpg" class="img-carrossel" alt="Velozes e Furiosos">
+            </div>
 
-          <!-- SEGUNDA SEÇÃO -->
-        <div class="secao">
-            <img src="Img/breaking.webp" class="img-carrossel">
-            <img src="Img/chosen.webp" class="img-carrossel">
-            <img src="Img/rockie.webp" class="img-carrossel">
-            <img src="Img/suits.webp" class="img-carrossel">
+            <!-- SEGUNDA SEÇÃO -->
+            <div class="secao">
+                <img src="Img/breaking.webp" class="img-carrossel" alt="Breaking Bad">
+                <img src="Img/chosen.webp" class="img-carrossel" alt="The Chosen">
+                <img src="Img/rockie.webp" class="img-carrossel" alt="Rockie">
+                <img src="Img/suits.webp" class="img-carrossel" alt="Suits">
+            </div>
+
         </div>
 
+        <button class="proximo" onclick="mudarImagem(1)">❯</button>
 
-        <!-- PRIMEIRA SEÇÃO -->
-        <div class="secao">
-            <img src="Img/manifest.jpg" class="img-carrossel">
-            <img src="Img/o mentalista.webp" class="img-carrossel">
-            <img src="Img/Peaky blinders.jpg" class="img-carrossel">
-            <img src="Img/Velozes e furiosos.jpg" class="img-carrossel">
-        </div>
-
-      
     </div>
-
-    <button class="proximo" onclick="mudarImagem(1)">❯</button>
-
-</div>
-
 
     <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
 </html>
+
